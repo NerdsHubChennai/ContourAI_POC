@@ -34,7 +34,6 @@ def show_chat_page():
             st.markdown(question)
 
         with st.chat_message("assistant"):
-            #st.session_state.session_manager.reset_timer()
             answer = st.session_state.qa.answer_question(question)
             st.markdown(answer)
         st.session_state.messages.append({"role": "assistant", "content": answer})

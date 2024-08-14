@@ -1,5 +1,6 @@
 import time
 
+
 class SessionManager:
     def __init__(self, timeout_seconds):
         self.timeout_seconds = timeout_seconds

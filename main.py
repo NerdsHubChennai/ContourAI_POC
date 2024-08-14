@@ -2,7 +2,6 @@ import streamlit as st
 from src.ui import show_credentials_page, show_chat_page
 
 
-
 def initialize_session_state():
     if 'page' not in st.session_state:
         st.session_state.page = 'credentials'
