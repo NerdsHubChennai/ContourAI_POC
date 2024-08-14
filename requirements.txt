@@ -1,0 +1,7 @@
+streamlit
+requests
+langchain
+langchain-community
+langchain-huggingface
+google-generativeai
+chromadb
