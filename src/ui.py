@@ -20,7 +20,7 @@ def show_credentials_page():
 
 
 def show_chat_page():
-    st.title("Repo Q&A")
+    st.title("Github Chatbot")
 
     # Display chat messages
     for message in st.session_state.messages:
