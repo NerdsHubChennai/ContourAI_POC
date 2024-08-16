@@ -8,7 +8,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain_community.llms.google_palm import GooglePalm
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_community.vectorstores import Chroma
+from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import CharacterTextSplitter
 
 
@@ -108,7 +108,7 @@ class GitHubRepoQA:
         texts = text_splitter.split_documents(documents)
         # Create a retriever from these documents
         embeddings = HuggingFaceEmbeddings()
-        vectorstore = Chroma.from_documents(texts, embeddings)
+        vectorstore = FAISS.from_documents(texts, embeddings)
         retriever = vectorstore.as_retriever()
         return retriever
 
