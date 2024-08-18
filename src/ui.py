@@ -5,8 +5,8 @@ from src.github_repo_qa import GitHubRepoQA
 def show_credentials_page():
     st.title("Configurations")
 
-    owner = st.text_input("Repository Owner", "Spotifyd")
-    repo = st.text_input("Repository Name", "spotifyd")
+    owner = st.text_input("Repository Owner", "microsoft")
+    repo = st.text_input("Repository Name", "autogen")
     token = st.text_input("GitHub Token", type="password")
 
     if st.button("Configure QA"):
